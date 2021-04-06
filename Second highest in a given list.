@@ -1,0 +1,8 @@
+#Problem: You are provided with a list of numbers and you have to return the second highest numbe
+n=int(input("Enter the length of list"))
+iplist=numList = list(i for i in input("Enter the list numbers separated by space ").strip().split())[:n]
+iplist.sort(reverse=True)
+for i in iplist:
+  if i<max(iplist):
+    print(i)
+    break
